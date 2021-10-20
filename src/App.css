@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+
+
+.ce-chat-list {
+   background-color: #122543!important;
+   width: 100%;
+}
+dix.ce-chat-unread-dot {
+  background-color: rgb(37, 201, 138);
+}
+.ce-chats-container {
+  background-color: #122543!important;
+  width: 100%;
+}
+.ce-chat-feed-container {
+background-color: #f6b6b5ce ;
+}
+.ce-active-chat-card {
+  background-color: #f6b6b5ce !important;
+  border-radius: 5px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ce-chat-subtitle-text {
+  color: #595959 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ce-chat-form-container {
+  padding-bottom: 20px !important;
+  
+}
+
+.ce-text-input {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+}
+
+.ce-primary-button {
+  border-radius: 6px !important;
+  background-color: #f6b6b5ce !important;
+  position: relative;
+  bottom: 1px;
+}
+
+.ce-danger-button {
+  background-color: white !important;
+  border-radius: 22px !important;
+}
+
+.ce-settings {
+  background-color: rgb(240, 240, 240) !important;
+}
+
+.ce-autocomplete-input {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+}
+
+.ce-autocomplete-options {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+  background-color: white !important;
+}
+
+.ce-chat-settings-container {
+  padding-top: 12px !important;
+}
+
+.ce-chat-avatars-row {
+  display: none !important;
+}
+
+.ce-chat-form-container {
+  color: #f6b6b5;
+  background-color: #122543!important;
+}
+
+.ce-chat-title{
+  background-color: #122543!important;
+  width: 80%;
+  } 
+*,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
   }
+
+  .wrapper {
+    height: 100vh;
+      width: 100%;
+      background-color: #122543!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    outline: none;
+    margin-bottom: 25px;
+  }
+  
+  .form {
+    width: 400px;
+  }
+  
+  .title {
+    text-align: center;
+    color: rgb(237 198 198);
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button {
+    border-radius: 50px;
+    border-color: rgb(237 198 198);
+    background-color: white;
+    color: rgb(237 198 198);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+    width: 90%;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  }
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .incorrect {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  .error {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+  
+      
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    padding: 15px 32px;
+    text-align: center;
+    
+  text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+  } 
+  button {
+    background-color: #ca9a9f;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 6px; 
+  
+  } 
+  
+  .navbar-header {
+    background-color: #122543;
+    padding: 10px;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.button {
+  cursor: pointer;
 }
