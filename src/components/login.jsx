@@ -9,6 +9,8 @@ const Modal = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [passwordShown, setPasswordShown] = useState(false);
+
 
   useEffect(() => {
     
@@ -24,14 +26,15 @@ const Modal = () => {
         });
 }, []);
 
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const authObject = { 'Project-ID': projectID, 'User-Name': username, 'User-Secret': password };
 
     try {
-      await axios.get('https://api.chatengine.io/chats', { headers: authObject });
-
+      await axios.get('https://api.chatengine.io/chats',  { headers: authObject });
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
 
@@ -42,6 +45,11 @@ const Modal = () => {
     }
   };
 
+  const togglePassword = () => {
+    // When the handler is invoked
+    // inverse the boolean state of passwordShown
+    setPasswordShown(!passwordShown);
+  };
   
   return (
    
@@ -51,7 +59,10 @@ const Modal = () => {
         <h1 className="title">Login to Start Chatting</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
+          <div>
+          <input type={passwordShown ? "text" :"password"} value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
+          <button onClick={togglePassword}>Show Password</button>
+          </div>
           <div align="center">
             <button type="submit" className="button">
               <span>PHONE ME</span>

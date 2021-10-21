@@ -1,24 +1,24 @@
 {
     "form": [
         {
-            "userName": "Chandler",
-            "userSecret": "321321"	
+            "username": "Chandler",
+            "password": "101010"	
         },
         {
-            "userName": "Joey",
-            "userSecret": "321321"	
+            "username": "Joey",
+            "password": "656565"	
         },
         {
-            "userName": "Monica",
-            "userSecret": "321321"	
+            "username": "Monica",
+            "password": "365655"	
         },
         {
             "userName": "Rachel",
-            "userSecret": "321321"	
+            "passsword": "321321"	
         },
         {
-            "userName": "Ross",
-            "userSecret": "321321"	
+            "username": "Ross",
+            "password": "443222"	
         }
     ],
     "profile": [
